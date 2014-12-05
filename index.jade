@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="utf-8")
+    title CSS Sourcemap Tests
+
+    link(href="one.css" rel="stylesheet")
+      
+    style(type="text/css")
+      include two.css
+
+    link(href=three rel="stylesheet")
+
+  body
+    h1#one ONE (external)
+    h1#two TWO (inline)
+    h1#three THREE (data uri)
